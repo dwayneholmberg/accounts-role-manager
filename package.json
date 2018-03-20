@@ -1,0 +1,20 @@
+{
+  "name": "accounts-role-manager",
+  "version": "0.0.1",
+  "description": "Account and role manager for Meteor accounts package and alanning:roles",
+  "main": "accounts-role-manager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dwayne Holmberg",
+  "license": "ISC",
+  "devDependencies": {
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-meteor": "^4.2.0"
+  }
+}
