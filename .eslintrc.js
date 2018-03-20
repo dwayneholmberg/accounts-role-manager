@@ -1,8 +1,6 @@
 module.exports = {
   "extends": "@meteorjs/eslint-config-meteor",
   "plugins": [
-    "react",
-    "jsx-a11y",
     "import"
   ],
   "env": {
