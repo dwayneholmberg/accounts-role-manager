@@ -1,11 +1,13 @@
-// Import Tinytest from the tinytest Meteor package.
-import { Tinytest } from "meteor/tinytest";
+/* global describe it expect */
 
-// Import and rename a variable exported by accounts-role-manager.js.
-import { name as packageName } from "meteor/othermachines:accounts-role-manager";
+import 'meteor/practicalmeteor:chai';
 
-// Write your tests here!
-// Here is an example.
-Tinytest.add('accounts-role-manager - example', function (test) {
-  test.equal(packageName, "accounts-role-manager");
+import Arm from 'meteor/othermachines:accounts-role-manager';
+
+const Users = Arm();
+
+describe('accounts-role-manager', function () {
+  it('provides a user count', function () {
+    expect(Users.count()).to.equal(4);
+  });
 });

@@ -7,7 +7,7 @@ Package.describe({
   git: '',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  documentation: 'README.md',
 });
 
 Package.onUse(function(api) {
@@ -19,6 +19,9 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
+  api.use('cultofcoders:mocha');
+  api.use('practicalmeteor:chai');
   api.use('othermachines:accounts-role-manager');
-  api.mainModule('accounts-role-manager-tests.js');
+  api.addFiles('accounts-role-manager-tests.js', 'client');
+  api.addFiles('accounts-role-manager-tests.js', 'server');
 });

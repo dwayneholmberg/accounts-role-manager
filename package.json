@@ -4,7 +4,7 @@
   "description": "Account and role manager for Meteor accounts package and alanning:roles",
   "main": "accounts-role-manager.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "meteor test-packages othermachines:accounts-role-manager --driver-package=centiq:testing"
   },
   "author": "Dwayne Holmberg",
   "license": "ISC",

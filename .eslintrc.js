@@ -7,6 +7,7 @@ module.exports = {
     "meteor": true
   },
   "rules": {
-    "no-return-assign": ["error", "except-parens"]
+    "no-return-assign": ["error", "except-parens"],
+    "import/no-unresolved": [ 2, { "ignore": ["^meteor/"] } ]
   },
 };
